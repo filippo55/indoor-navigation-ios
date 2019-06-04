@@ -20,7 +20,7 @@ locationBuilder.setLocationBoundaryPoints([
 locationBuilder.setLocationOrientation(50)
 ```
 
-### The next step is to place beacons 
+The next step is to place beacons 
 
 ```swift
 locationBuilder.addBeacon(withIdentifier: "YOUT_IDENTIFIER", withPosition: EILOrientedPoint(x:0,y:0,orientation:180), andColor: ESTColor.coconutPuff)
