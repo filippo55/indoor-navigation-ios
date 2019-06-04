@@ -20,13 +20,13 @@ locationBuilder.setLocationBoundaryPoints([
 locationBuilder.setLocationOrientation(50)
 ```
 
-The next step is to place beacons 
+###The next step is to place beacons 
 
 ```swift
 locationBuilder.addBeacon(withIdentifier: "YOUT_IDENTIFIER", withPosition: EILOrientedPoint(x:0,y:0,orientation:180), andColor: ESTColor.coconutPuff)
 ```
 
-Obtaining position update inside the location
+###Obtaining position update inside the location
 
 Once you have instance of ```EILLocation``` you can start monitoring and obtaining position updates for that location.
 
