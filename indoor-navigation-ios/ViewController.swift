@@ -71,7 +71,7 @@ class ViewController: UIViewController, EILIndoorLocationManagerDelegate{
             EILPoint(x: 5.00, y: 13.00),
             EILPoint(x: 0.00, y: 13.00)])
         
-        // TODO: put your beacon Identifier
+        // TODO: Replace with an identifier of your own beacon
         // You can find the identifiers of your beacons on https://cloud.estimote.com
         locationBuilder.addBeacon(withIdentifier: "YOUR_IDENTIFIER", withPosition: EILOrientedPoint(x:2.5,y:0,orientation:180), andColor: ESTColor.coconutPuff)
         locationBuilder.addBeacon(withIdentifier: "YOUR_IDENTIFIER", withPosition: EILOrientedPoint(x:5,y:6.5,orientation:90), andColor: ESTColor.coconutPuff)

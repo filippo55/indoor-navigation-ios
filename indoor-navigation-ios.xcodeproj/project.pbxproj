@@ -102,6 +102,7 @@
 				DC5B93E2229FE369004A3AD2 /* Frameworks */,
 				DC5B93E3229FE369004A3AD2 /* Resources */,
 				8CF549CB114DBFBC385C1C29 /* [CP] Copy Pods Resources */,
+				DC2B949322A6761600EB6E0D /* TODO check */,
 			);
 			buildRules = (
 			);
@@ -272,6 +273,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-indoor-navigation-ios/Pods-indoor-navigation-ios-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		DC2B949322A6761600EB6E0D /* TODO check */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "TODO check";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "tags=\"TODO:\"\nmatches=`find \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($tags).*\\$\"`\necho \"$matches\" | perl -p -e \"s/($tags)/ error: \\$1/\"\n[ -z \"$matches\" ] || exit 1\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
