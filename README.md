@@ -25,6 +25,11 @@ The next step is to place beacons
 ```swift
 locationBuilder.addBeacon(withIdentifier: "YOUT_IDENTIFIER", withPosition: EILOrientedPoint(x:0,y:0,orientation:180), andColor: ESTColor.coconutPuff)
 ```
+Last step is build your location
+
+```swift
+location = locationBuilder.build()
+```
 
 ### Obtaining position update inside the location
 
