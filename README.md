@@ -11,11 +11,11 @@ The shape of the location is defined by its boundary points. For example, consid
 
 ```swift
 let locationBuilder = EILLocationBuilder()
- locationBuilder.setLocationBoundaryPoints([
+locationBuilder.setLocationBoundaryPoints([
             EILPoint(x: 0.00, y: 0.00),
             EILPoint(x: 5.00, y: 0.00),
-            EILPoint(x: 5.00, y: 13.00),
-            EILPoint(x: 0.00, y: 13.00)])
+            EILPoint(x: 5.00, y: 5.00),
+            EILPoint(x: 0.00, y: 5.00)])
             
 locationBuilder.setLocationOrientation(50)
 ```
@@ -23,7 +23,7 @@ locationBuilder.setLocationOrientation(50)
 The next step is to place beacons 
 
 ```swift
- locationBuilder.addBeacon(withIdentifier: "YOUT_IDENTIFIER", withPosition: EILOrientedPoint(x:0,y:0,orientation:180), andColor: ESTColor.coconutPuff)
+locationBuilder.addBeacon(withIdentifier: "YOUT_IDENTIFIER", withPosition: EILOrientedPoint(x:0,y:0,orientation:180), andColor: ESTColor.coconutPuff)
 ```
 
 Obtaining position update inside the location
