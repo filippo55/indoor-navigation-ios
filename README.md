@@ -2,7 +2,7 @@
 
 ## Setting up a your location using Estimote Indoor SDK
 
-SDK is available as EstimoteIndoorSDK in CocoaPods. For installation just run this command in project folder.
+SDK is available as EstimoteIndoorSDK in CocoaPods. For installation just run this command in project folder. Make sure that you are using the latest version of CocoaPods.  
 
 ```bash
 pod install
