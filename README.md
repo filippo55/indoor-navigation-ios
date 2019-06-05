@@ -2,11 +2,13 @@
 
 ## Setting up a your location using Estimote Indoor SDK
 
-SDK is available as EstimoteIndoorSDK in CocoaPods. For installation just run this command in project folder. Make sure that you are using the latest version of CocoaPods.  
+SDK is available as EstimoteIndoorSDK in CocoaPods. For installation just run this command in project folder. 
 
 ```bash
 pod install
 ```
+Make sure that you are using the latest version of CocoaPods. 
+
 
 In order to construct a new location you need to:
 
@@ -26,12 +28,12 @@ locationBuilder.setLocationBoundaryPoints([
 locationBuilder.setLocationOrientation(50)
 ```
 
-The next step is to place beacons 
+The next step is to place beacons:
 
 ```swift
 locationBuilder.addBeacon(withIdentifier: "YOUT_IDENTIFIER", withPosition: EILOrientedPoint(x:0,y:0,orientation:180), andColor: ESTColor.coconutPuff)
 ```
-Last step is build your location
+Last step is build your location:
 
 ```swift
 location = locationBuilder.build()
