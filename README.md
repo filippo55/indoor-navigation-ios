@@ -2,6 +2,12 @@
 
 ## Setting up a your location using Estimote Indoor SDK
 
+SDK is available as EstimoteIndoorSDK in CocoaPods. For installation just run this command in project folder.
+
+```bash
+pod install
+```
+
 In order to construct a new location you need to:
 
 - set the shape of the location and its orientation
